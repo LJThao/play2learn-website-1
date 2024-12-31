@@ -1,4 +1,4 @@
-# Play2Learn Website
+# LJ's Play2Learn Website
 In this project, I'm going to use HTML, CSS, and JavaScript to build the front-end of my Play2Learn website. It will include the Math Facts Practice Game and the Anagram Hunt Game, but I am going to only build the Math Facts Practice Game for now. 
 
 The home page will lay out my games and consists of upper and lower navigation links to other pages.
