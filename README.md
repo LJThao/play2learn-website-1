@@ -15,8 +15,11 @@ Feel free to navigate around and test my website!
 
 ## Link
 - [Click Me](https://ljthao.github.io/play2learn-frontend/)
+```
+
 Click here to navigate to my website!
 
+```
 ## Authors and Acknowledgements
 - LJ Thao - [Github](https://github.com/LJThao)
 
