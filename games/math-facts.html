@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Math Facts Practice</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<!-- Body -->
+<body>
+    <header>
+        <nav>
+            <div class="logo">Play2Learn Logo</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Games</a>
+                    <ul class="dropdown-content">
+                        <li><a href="anagram-hunt.html">Anagram Hunt</a></li>
+                        <li><a href="math-facts.html">Math Facts Practice</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main -->
+    <main class="main-section">
+        <!-- Math Facts Practice Game -->
+        <h1 class="page-title">Math Facts Practice</h1>
+        <form id="math-facts-form" class="form-section math-form-style">
+            <label for="operation" class="label-style">Operation:</label>
+            <select id="operation" name="operation" required class="select-style">
+                <option value="addition">Addition</option>
+                <option value="subtraction">Subtraction</option>
+                <option value="multiplication">Multiplication</option>
+                <option value="division">Division</option>
+            </select>
+            <button type="button" id="start-math" class="go-button">Go</button>
+        </form>
+        <ol class="instructions instruction-style">
+            <li>Select operation.</li>
+            <li>Press <strong>Go.</strong></li>
+            <li>How many problems can you solve in 30 seconds?</li>
+        </ol>
+
+        <div id="game-section" class="game-section section-style">
+            <div id="problem"></div>
+            <label for="answer" class="form-label">Enter your answer:</label>
+            <input type="text" id="answer" class="input-style" placeholder="Enter answer">
+            <div id="keypad" class="keypad-style">
+                <button type="button" class="keypad-button" value="1">1</button>
+                <button type="button" class="keypad-button" value="2">2</button>
+                <button type="button" class="keypad-button" value="3">3</button>
+                <button type="button" class="keypad-button" value="4">4</button>
+                <button type="button" class="keypad-button" value="5">5</button>
+                <button type="button" class="keypad-button" value="6">6</button>
+                <button type="button" class="keypad-button" value="7">7</button>
+                <button type="button" class="keypad-button" value="8">8</button>
+                <button type="button" class="keypad-button" value="9">9</button>
+                <button type="button" class="keypad-button" value="0">0</button>
+                <button type="button" id="enter" class="both-button">ENTER</button>
+                <button type="button" id="clear" class="both-button">CLEAR</button>
+            </div>
+            <div id="score" class="info-text">Score: 0</div>
+            <div id="time-left" class="info-text">Time Left: 30 seconds</div>
+        </div>
+
+        <div id="result-section" class="result-section section-style">
+            <h2>Times up!</h2>
+            <p id="final-score" class="info-text">Your final score is: <strong>0</strong></p>
+            <button type="button" id="play-again" class="go-button">Play Again</button>
+        </div>
+    </main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Play2Learn</p>
+    <address>
+        <a href="../contact-us.html">
+            <img src="../images/icon-contact-us.png" alt="Contact Us"></a>
+        <a href="https://instagram.com">
+            <img src="../images/icon-instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com">
+            <img src="../images/icon-twitter.png" alt="Twitter"></a>
+        <a href="https://facebook.com">
+            <img src="../images/icon-facebook.png" alt="Facebook"></a>
+    </address>
+</footer>
+<script src="../scripts/math.js"></script>
+</body>
+</html>

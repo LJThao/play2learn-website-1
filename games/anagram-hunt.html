@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Play2Learn - Anagram Hunt</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<!-- Body -->
+<body>
+    <header>
+        <nav class="upper-nav">
+            <div class="logo">Play2Learn Logo</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Games</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../games/anagram-hunt.html">Anagram Hunt</a></li>
+                        <li><a href="../games/math-facts.html">Math Facts Practice</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-section">
+        <!-- Example Anagram Hunt -->
+        <h1 class="centered-text">Anagram Hunt</h1>
+        <form id="anagram-hunt-form" class="form-section ana-form-style">
+            <label for="word-length" class="label-style">Number of Letters:</label>
+            <select id="word-length" name="word-length" required>
+                <option value="Any">Any</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9+</option>
+            </select>
+            <button type="button" id="start-hunt" class="go-button">Go</button>
+            <span class="tooltip-icon" data-tooltip="An anagram is a word made by rearranging the letters of another word.">?</span>
+        </form>
+        <ol class="instructions">
+            <li>Select the word length.</li>
+            <li>Press <strong>Go</strong>. A word will appear along with the number of anagrams it has.</li>
+            <li>Enter all the anagrams for the word that you can think of. Hurry. You only have 30 seconds.</li>
+        </ol>
+        <img src="../images/comingsoon.png" alt="coming soon photo" class="hunt-image">
+    </main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Play2Learn</p>
+    <address>
+        <a href="../contact-us.html">
+            <img src="../images/icon-contact-us.png" alt="Contact Us"></a>
+        <a href="https://instagram.com">
+            <img src="../images/icon-instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com">
+            <img src="../images/icon-twitter.png" alt="Twitter"></a>
+        <a href="https://facebook.com">
+            <img src="../images/icon-facebook.png" alt="Facebook"></a>
+    </address>
+</footer>
+</body>
+</html>

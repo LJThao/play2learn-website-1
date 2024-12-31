@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<!-- Body -->
+<body>
+    <header>
+        <nav>
+            <div class="logo">Play2Learn Logo</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Games</a>
+                    <ul class="dropdown-content">
+                        <li><a href="games/anagram-hunt.html">Anagram Hunt</a></li>
+                        <li><a href="games/math-facts.html">Math Facts Practice</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-section">
+        <section id="login-section">
+            <!-- Log in -->
+            <h1>Log in</h1>
+            <form action="javascript:alert('Form Submitted')" method="post" class="login-form form-style">
+                <div class="form-group">
+                    <label for="login-email" class="form-label">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required class="input-style">
+                </div>
+                <div class="form-group">
+                    <label for="login-password" class="form-label">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required class="input-style">
+                </div>
+                <button type="submit" class="submit-button">LOGIN</button>
+            </form>
+            <p><a href="#" id="register-link">Need an account? Register here.</a></p>
+        </section>
+
+        <!-- Register -->
+        <section id="register-section" class="hidden-section">
+            <h1>Register</h1>
+            <!-- Alert once form is submitted -->
+            <form action="javascript:alert('Form Submitted')" method="post" class="register-form form-style">
+                <div class="form-group">
+                    <label for="register-email" class="form-label">Email:</label>
+                    <input type="email" id="register-email" name="register-email" required class="input-style">
+                </div>
+                <div class="form-group">
+                    <label for="register-password" class="form-label">Password:</label>
+                    <input type="password" id="register-password" name="register-password" required class="input-style">
+                </div>
+                <div class="form-group">
+                    <label for="repeat-password" class="form-label">Repeat Password:</label>
+                    <input type="password" id="repeat-password" name="repeat-password" required class="input-style">
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" class="checkbox-label">I am over 13 and I like playing games.</label>
+                </div>
+                <button type="submit" class="submit-button">REGISTER</button>
+            </form>
+            <p><a href="#" id="login-link">Have an account? Log in here.</a></p>
+        </section>
+    </main>
+    
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Play2Learn</p>
+    <address>
+        <a href="contact-us.html">
+            <img src="images/icon-contact-us.png" alt="Contact Us"></a>
+        <a href="https://instagram.com">
+            <img src="images/icon-instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com">
+            <img src="images/icon-twitter.png" alt="Twitter"></a>
+        <a href="https://facebook.com">
+            <img src="images/icon-facebook.png" alt="Facebook"></a>
+    </address>
+</footer>
+<script src="scripts/forms.js"></script>
+</body>
+</html>

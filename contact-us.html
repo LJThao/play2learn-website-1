@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<!-- Body -->
+<body>
+    <header>
+        <nav>
+            <div class="logo">Play2Learn Logo</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Games</a>
+                    <ul class="dropdown-content">
+                        <li><a href="games/anagram-hunt.html">Anagram Hunt</a></li>
+                        <li><a href="games/math-facts.html">Math Facts Practice</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-section">
+        <section class="contact-us">
+            <h1 class="title-text">Contact Us</h1>
+            <!-- Alert once the form is submitted -->
+            <form action="javascript:alert('Form Submitted')" method="post" class="contact-form form-style">
+                <div class="form-group">
+                    <label for="email" class="form-label">Your email:</label>
+                    <input type="email" id="email" name="email" required class="input-style" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject:</label>
+                    <input type="text" id="subject" name="subject" required class="input-style" placeholder="Enter your subject">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" rows="5" required class="textarea-style" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="submit-button">SEND</button>
+            </form>
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Play2Learn</p>
+    <address>
+        <a href="contact-us.html">
+            <img src="images/icon-contact-us.png" alt="Contact Us"></a>
+        <a href="https://instagram.com">
+            <img src="images/icon-instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com">
+            <img src="images/icon-twitter.png" alt="Twitter"></a>
+        <a href="https://facebook.com">
+            <img src="images/icon-facebook.png" alt="Facebook"></a>
+    </address>
+</footer>
+</body>
+</html>

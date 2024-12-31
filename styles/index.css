@@ -1,0 +1,471 @@
+/* CSS styling for all HTMLs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    justify-content: center;
+}
+
+.main-section {
+    max-width: 800px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+/* Header + Navigation */
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.nav-links a:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: white;
+}
+
+.nav-links a:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.dropdown-content li a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Quotes */
+.quote-section {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+    color: blue;
+}
+
+/* Happy Clients */
+.happy-clients {
+    text-align: left;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-left: 100px;
+}
+
+.happy-clients h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.client-testimonial {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Games */
+.games-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.game {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.game h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.game p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+/* Play Button */
+.play-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: blue;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .copyright {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+footer .address {
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* About Us CSS */
+.about-us h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.about-us p {
+    margin-top: 10px;
+}
+
+.about-image {
+    width: 600px;
+    height: auto;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+/* Contact Us CSS */
+.form-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.input-style,
+.textarea-style {
+    width: 100%;
+    padding: 8px;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.submit-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Login CSS */
+.main-section h1 {
+    font-size: 2.5em;
+}
+
+.form-style {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-style {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkbox-group {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    margin-left: 10px;
+}
+
+.hidden-section {
+    display: none;
+}
+
+/* Math Facts CSS */
+.page-title {
+    text-align: center;
+}
+
+.form-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.select-style {
+    margin-left: 10px;
+}
+
+.button-style {
+    margin-left: 10px;
+}
+
+.instruction-style {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.section-style {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.input-style {
+    margin-top: 10px;
+}
+
+.info-text {
+    margin-top: 15px;
+}
+
+/* Key Pad Buttons CSS */
+.keypad-style {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    width: max-content;
+}
+
+.keypad-button {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.both-button {
+    height: 70px;
+    font-size: 1.2em;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Anagram Hunt CSS */
+.title-text {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.main-section h1 {
+    margin-bottom: 20px;
+}
+
+.ana-form-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.input-style {
+    padding: 8px;
+}
+
+.go-button {
+    background-color: blue;
+    color: #fff;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.instructions {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 450px;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+/* Question Mark Tooltip */
+.tooltip-icon {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.tooltip-icon::after {
+    content: attr(data-tooltip);
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1;
+}
+
+.tooltip-icon:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
