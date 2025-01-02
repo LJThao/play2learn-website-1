@@ -14,7 +14,7 @@ Feel free to navigate around and test my website!
 6. [Anagram Hunt Game](games/anagram-hunt.html)
 
 ## Link
-- [Click Me](https://ljthao.github.io/play2learn-frontend/)
+- [Click Me](https://ljthao.github.io/play2learn-website-1/)
 
 ## Author and Acknowledgement
 - LJ Thao - [Github](https://github.com/LJThao)
