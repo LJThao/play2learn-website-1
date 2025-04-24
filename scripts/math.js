@@ -1,4 +1,4 @@
-// Load the document
+// Load the document...
 document.addEventListener('DOMContentLoaded', () => {
     // Selecting the elements
     const elements = {
